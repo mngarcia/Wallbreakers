@@ -8,14 +8,15 @@ class Solution {
           boolean divisibleBy5 = (i % 5 == 0);
 
           if (divisibleBy3 && divisibleBy5) {
-            ans.add("FizzBuzz");
+            result.add("FizzBuzz");
           } else if (divisibleBy3) {
-            ans.add("Fizz");
+            result.add("Fizz");
           } else if (divisibleBy5) {
-            ans.add("Buzz");
+            result.add("Buzz");
           } else {
-            ans.add(Integer.toString(num));
+            result.add(Integer.toString(n));
           }
         }
+        return result;
     }
 }
